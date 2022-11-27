@@ -1,0 +1,14 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Api With JSON server in Memory",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db_videos.json --no-cors true --port 9000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
