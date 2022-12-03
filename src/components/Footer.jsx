@@ -11,7 +11,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
             >
-                YouTube Video Players...
+              Video Players...
             </a>
         </div>
      </div>

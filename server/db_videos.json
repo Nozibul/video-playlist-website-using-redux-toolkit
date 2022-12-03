@@ -5,6 +5,21 @@
             "title": "UI/ UX design",
             "description": "This video is perfect for you if you want to learn how to transform a Figma design into a fully functioning website, improve your CSS skills, and create modern and responsive #ReactJS websites.",
             "author": "Javascript Mastery",
+            "avatar": "https://images.unsplash.com/photo-1567446537708-ac4aa75c9c28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+            "date": "Nov 12, 2021",
+            "duration": "3:20:12",
+            "views": "9.1k",
+            "link": "https://www.youtube.com/embed/LMagNcngvcU",
+            "thumbnail": "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dWl8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "tags": ["ui", "css"],
+            "likes": 894,
+            "unlikes": 10
+        },
+        {
+            "id": 2,
+            "title": "UI/ UX design",
+            "description": "This video is perfect for you if you want to learn how to transform a Figma design into a fully functioning website, improve your CSS skills, and create modern and responsive #ReactJS websites.",
+            "author": "Javascript Mastery",
             "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
             "date": "Nov 12, 2021",
             "duration": "3:20:12",
@@ -12,26 +27,41 @@
             "link": "https://www.youtube.com/embed/LMagNcngvcU",
             "thumbnail": "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dWl8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
             "tags": ["ui", "css"],
-            "likes": 0,
-            "unlikes": 0
+            "likes": "1.2k",
+            "unlikes": 9
         },
         {
-            "id": 2,
+            "id": 3,
+            "title": "UI/ UX design",
+            "description": "This video is perfect for you if you want to learn how to transform a Figma design into a fully functioning website, improve your CSS skills, and create modern and responsive #ReactJS websites.",
+            "author": "Javascript Mastery",
+            "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+            "date": "Nov 12, 2021",
+            "duration": "3:20:12",
+            "views": "9.1k",
+            "link": "https://www.youtube.com/embed/LMagNcngvcU",
+            "thumbnail": "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dWl8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "tags": ["ui"],
+            "likes": 120,
+            "unlikes": 3
+        },
+        {
+            "id": 4,
             "title": "Data Structure and Algorithm",
             "description": "The explanation for the article: http://quiz.geeksforgeeks.org/stack-s. This video is contributed by Harshit Jain.",
             "author": "Harshit Jain",
-            "avatar": "https://avatars.githubusercontent.com/u/73503432?v=4",
+            "avatar": "https://images.unsplash.com/photo-1567446537708-ac4aa75c9c28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
             "date": "April 25, 2021",
             "duration": "18:12",
             "views": "12.1k",
             "link": "https://www.youtube.com/embed/vZEuSFXSMDI",
             "thumbnail": "https://images.unsplash.com/photo-1664619319027-cb086f9a11e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
             "tags": ["DSA"],
-            "likes": 0,
-            "unlikes": 0
+            "likes": "2.2k",
+            "unlikes": 25
         },
         {
-            "id": 3,
+            "id": 5,
             "title": "Tailwind CSS 3 tutorial - Upgrade to Tailwind 3 | Tailwind CSS Bangla Tutorial",
             "description": "Tailwind CSS v3.0 came with incredible performance gains, huge workflow improvements, and a seriously ridiculous number of new features. In this tutorial - I have tried to explain different new features of Tailwind CSS version 3, how to install tailwind css 3, how to upgrade from tailwind v2 to v3 etc.",
             "author": "Learn with Sumit",
@@ -42,11 +72,11 @@
             "link": "https://www.youtube-nocookie.com/embed/4M7D3O2XX4o",
             "thumbnail": "https://i3.ytimg.com/vi/4M7D3O2XX4o/maxresdefault.jpg",
             "tags": ["tailwind", "css"],
-            "likes": 0,
-            "unlikes": 0
+            "likes": "3.4k",
+            "unlikes": 30
         },
         {
-            "id": 4,
+            "id": 6,
             "title": "Debounce Function in JavaScript - JavaScript Job Interview question",
             "description": "In this video, I have explained about the debounce function in JavaScript. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function.",
             "author": "Learn with Sumit",
@@ -57,11 +87,11 @@
             "link": "https://www.youtube-nocookie.com/embed/dD9O8DnIBj4",
             "thumbnail": "https://i3.ytimg.com/vi/dD9O8DnIBj4/maxresdefault.jpg",
             "tags": ["debounce", "javascript", "tips"],
-            "likes": 0,
-            "unlikes": 0
+            "likes": 74,
+            "unlikes": 14
         },
         {
-            "id": 5,
+            "id": 7,
             "title": "SASS Tutorial in English - Overview of SASS",
             "description": "In this video, I have given a high level overview of popular CSS Pre-processor SASS which helps us managing our styles at scale. If you have a basic understanding of CSS & JavaScript, this 10 mins SASS Tutorial will help you getting started with SASS.",
             "author": "Learn with Sumit",
@@ -71,12 +101,12 @@
             "views": "1.1k",
             "link": "https://www.youtube-nocookie.com/embed/4tV1Mfi4fMA",
             "thumbnail": "https://i3.ytimg.com/vi/4tV1Mfi4fMA/maxresdefault.jpg",
-            "tags": ["sass", "css", "ui"],
-            "likes": 0,
-            "unlikes": 0
+            "tags": ["sass",  "ui"],
+            "likes": 421,
+            "unlikes": 130
         },
         {
-            "id": 6,
+            "id": 8,
             "title": "React Router DOM v6 Bangla Tutorial - Breaking Changes - React Router 6 vs 5",
             "description": "In this React Router DOM v6 Bangla tutorial, you will learn how to install react router dom 6, what are the breaking changes in react router 6, difference between react router 6 vs 5, how to upgrade from react router v5 to react router v6. ",
             "author": "Learn with Sumit",
@@ -87,11 +117,12 @@
             "link": "https://www.youtube-nocookie.com/embed/34tjWL9wi4g",
             "thumbnail": "https://i3.ytimg.com/vi/34tjWL9wi4g/maxresdefault.jpg",
             "tags": ["react", "router", "javascript"],
-            "likes": 0,
+            "likes":"2.6k",
             "unlikes": 0
         }
    
     ],
+    
     "tags": [
         {
             "id": 1,
