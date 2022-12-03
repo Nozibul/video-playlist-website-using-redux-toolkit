@@ -8,11 +8,13 @@ const Videos = () => {
  const {videos, isLoading, isError, error} = useSelector((state)=> state.videos); // initialState
  const dispatch = useDispatch()
  
- useEffect(()=>{
-   dispatch(fetchVideos());
- }, [dispatch])
+ const {tags, search} = useSelector(state => state.filters)
 
-  
+ useEffect(()=>{
+   dispatch(fetchVideos({tags, search}));
+ }, [dispatch, tags, search])
+
+
 // Decide what to return 
 let content ;
 
