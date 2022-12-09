@@ -8,13 +8,14 @@ const initialState = {
     error: ""
 };
 
+
 // async thunk
-export const fetchVideos = createAsyncThunk("videos/fetchVideos", async({tags, search})=> {
-   const videos = await getVideos(tags, search)
+export const fetchVideos = createAsyncThunk("videos/fetchVideos", async()=> {
+   const videos = await getVideos()
    return videos ;
 });
 
-
+ 
 // create slice
 const videosSlice = createSlice({
     name: "videos",
@@ -27,7 +28,7 @@ const videosSlice = createSlice({
             })
             .addCase(fetchVideos.fulfilled, (state, action)=>{
                 state.isLoading = false
-                state.videos = action.payload
+                state.videos = action.payload.videos ;
             })
             .addCase(fetchVideos.rejected, (state, action)=>{
                 state.videos = [];

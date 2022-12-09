@@ -9,7 +9,7 @@ export const getRelatedVideos = async ({tags, id})=>{
     `tags_like=${tag}`).join('&') + `&id_ne=${id}&_limit=${limit}`
     : `&id_${id}&_limit=${limit}` ;
 
-  const response = await axiosInstance.get(`./videos?${queryString}`);
+  const response = await axiosInstance.get(`/videos?${queryString}`);
 
   return response.data
 }
