@@ -7,14 +7,14 @@ import RelatedVideoLists from "../components/list/RelatedVideoLists";
 import Loading from "../components/ui/Loading";
 import { fetchVideo } from "../features/video/videoSlice"
 
-const Video =()=> {
+const VideoDes =()=> {
   const {video, isLoading, isError, error} = useSelector((state)=> state.video)
   const dispatch = useDispatch();
   const {videoId} = useParams();
 
 
   useEffect(()=>{
-     dispatch(fetchVideo(videoId)); // dispatch er modhhe action gulo dia dite hobe 
+     dispatch(fetchVideo(videoId));  
   },[dispatch, videoId]) ;
 
 
@@ -32,10 +32,10 @@ const Video =()=> {
     if(!isLoading && !isError && video?.id){
     content = (
         <div className="grid grid-cols-3 gap-2 lg:gap-8">
-        <div className="col-span-full w-full space-y-8 lg:col-span-2">
+         <div className="col-span-full w-full space-y-8 lg:col-span-2">
             <Player link={link} title={title} />
             <VideoDescription video={video} />
-        </div>
+         </div>
 
         <RelatedVideoLists curVideoId={id} tags={tags} />
       </div>
@@ -52,4 +52,4 @@ const Video =()=> {
     );
 }
 
-export default Video ;
+export default VideoDes ;

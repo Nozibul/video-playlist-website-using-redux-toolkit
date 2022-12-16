@@ -1,7 +1,16 @@
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom"
+import { selectAuthor } from "../../features/filter/filterSlice";
+
 
 const VideoItem = ({video = {} }) => {
 const {id, author, thumbnail, title, duration, avatar, views, date } =  video;
+
+const dispatch = useDispatch();
+const handleAuthor = (author) =>{
+    dispatch(selectAuthor(author))
+}
+
 
   return (
     <div className="col-span-12 sm:col-span-6 md:col-span-3 duration-300 hover:scale-[1.03]">
@@ -21,13 +30,13 @@ const {id, author, thumbnail, title, duration, avatar, views, date } =  video;
         </div>
 
         <div className="flex flex-row mt-2 gap-2">
-            <Link to={`videos/${id}`} className="shrink-0">
+            <button onClick={()=> handleAuthor(author)} className="shrink-0">
                 <img
                     src={avatar}
                     className="rounded-full h-6 w-6"
                     alt={author}
                 />
-            </Link>
+            </button>
 
             <div className="flex flex-col">
                 <Link to={`videos/${id}`}>
@@ -35,10 +44,10 @@ const {id, author, thumbnail, title, duration, avatar, views, date } =  video;
                         {title}
                     </p>
                 </Link>
-                <Link className="text-gray-400 text-xs mt-2 hover:text-gray-600"
-                    to={`videos/${id}`} >
+                <button className="text-gray-400 text-xs mt-2 hover:text-gray-600"
+                onClick={()=> handleAuthor(author)} >
                     {author}
-                </Link>
+                </button>
                 <p className="text-gray-400 text-xs mt-1">
                    {views} views . {date}
                 </p>

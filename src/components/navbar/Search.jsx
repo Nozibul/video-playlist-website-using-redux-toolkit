@@ -20,8 +20,7 @@ const Search = () => {
     if(!match){
       navigate("/")
     }
-
-       
+     
   }
 
   return (

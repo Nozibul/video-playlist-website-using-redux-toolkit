@@ -8,11 +8,11 @@ const Videos = () => {
  const dispatch = useDispatch()
  const {videos, isLoading, isError, error} = useSelector((state)=> state.videos); 
  
-//  const {tags, search} = useSelector(state => state.filters)
+ const {tags, search, author } = useSelector(state => state.filters)
 
  useEffect(()=>{
-   dispatch(fetchVideos());
- }, [dispatch])
+   dispatch(fetchVideos({tags, search, author}));
+ }, [dispatch, tags, search, author])
 
 
 // Decide what to return 
@@ -22,7 +22,7 @@ if(isLoading) content = <Loading />;
 if(!isLoading && isError){
   content = <div className="col-span-12">{error}</div> ;
 }
-if(!isLoading && !isError && videos.length === 0) {
+if(!isLoading && !isError && videos?.length === 0) {
   content = <div className="col-span-12">No videos Found!!!</div> 
 }
 if(!isLoading && !isError && videos?.length > 0){
