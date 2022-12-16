@@ -4,7 +4,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   tags: [],
   search: "",
-  author: null
+  author: null,
+  pagination:{
+    currentPage: 1,
+    limit: 5,
+  }
 };
 
 
@@ -33,9 +37,23 @@ const filterSlice = createSlice({
             state.tags = [];
             state.search = "";
             state.author = null
-        }
+        },
+        setLimit: (state, action) => {
+            state.pagination.limit = parseInt(action.payload) || 5;
+        },
+        setPage: (state, action) => {
+            state.pagination.currentPage = parseInt(action.payload) || 1;
+        },
+      
     }
 });
 
 export default filterSlice.reducer ;
-export const {clearFilters, tagsSelected, tagsRemoved, searched, selectAuthor } = filterSlice.actions
+export const { 
+    setLimit,
+    setPage, 
+    clearFilters, 
+    tagsSelected, 
+    tagsRemoved, 
+    searched, 
+    selectAuthor } = filterSlice.actions
