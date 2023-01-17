@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:9000",
+    baseURL: "https://video-playlist-server.vercel.app",
 });
 
 export default axiosInstance ;
